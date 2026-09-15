@@ -91,12 +91,93 @@
 // FIND
 // Retorna o primeiro elemento que atende a condição
 
-let produtos = [
-    { id: 1, nome: "teclado", preco: 50 },
-    { id: 2, nome: "mouse", preco: 30}
-]
+// let produtos = [
+//     { id: 1, nome: "teclado", preco: 50 },
+//     { id: 2, nome: "mouse", preco: 30},
+//     { id: 2, nome: "carderno", preco: 30}
+// ]
 
-let item = produtos.find(p => p.id === 1)
+// let item = produtos.find(p => p.id === 2)
 
-console.log(item);
+// console.log(item);
+
+// // DIFERENÇA ENTRE FILTER E FIND
+// // find -> retorna somente o primeiro elemento que ele encotra com acondição
+// // filter -> retorna todos que encotra com a condição
+
+// let itemFiltrado = produtos.filter(p => p.id === 2)
+
+// console.log(itemFiltrado);
+
+// SPLIT
+// Divide a string em partes, transformando em um array
+
+// let frase = "JS é top";
+
+// let palavras = frase.split(" ");
+// console.log(palavras);
+
+// TRIM
+// Trim remove espaços mp omocop e fomaç de string
+// let nome = "        paulo"
+// let nomeLimpo = nome.trim();
+
+// console.log(nome);
+// console.log(nomeLimpo);
+
+// INCLUDES
+// Verifica se existe um valor dentro de uma lista e retorna um booleano (true ou false)
+
+// let frutas = ["maçã", "banana"];
+
+// let frutasInclude = frutas.includes("maçã");
+
+// console.log(frutasInclude); // true
+
+
+// toLowerCase() -> transforma o texto em minúsculo
+// toUpperCase() -> transforma o texto em maiúsculo
+// let nome = "HEITOR";
+// let cargo = "estudante";
+
+// console.log(nome.toLowerCase());
+// console.log(cargo.toUpperCase());
+
+// FOREACH
+// let nomes = ["Guilherme", "joão", "Maria"]
+
+// nomes.forEach(nome => console.log(nome));
+
+
+// SOME
+// Verifica se pelo menos um item atende a condição
+// Retorna booleano
+
+// let numeros = [1, 3, 5, 8];
+
+// let temPar = numeros.some(num => num % 2 === 0);
+// console.log(temPar); // true
+
+// EVERY
+// Verifica se TODOS os elementos atendem a condição
+
+// let todosPares = numeros.every(num => num % 2 === 0);
+// console.log(todosPares); // false
+
+// SORT
+// Ordena os elementos do array
+
+let numeros = [3, 10, 5, 2, 4]
+
+let letras = ["c", "a", "x", "h"]
+
+// para letras
+
+letras.sort();
+console.log(letras);
+
+// para numeros
+
+numeros.sort((a, b) => a - b);
+console.log(numeros);
 
